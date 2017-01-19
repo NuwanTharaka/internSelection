@@ -259,7 +259,7 @@
 									  <div class="clearfix"></div>
 									<div class="bot-border"></div>
 
-						<div class="col-sm-5 col-xs-6 tital " ><h6 class="flat-title-section">Description:</h6></div><div class="col-sm-7"><h6 class="flat-title-section"><span style="font-size: 10px; text-align: justify">{{$student->description}}</span></h6></div>
+						 <div class="col-sm-5 col-xs-6 tital " ><h6 class="flat-title-section">Description:</h6></div><div class="col-sm-7"><h6 class="flat-title-section"><span><input type="text" style="font-size: 10px; text-align: justify">{{$student->description}}</span></h6></div>
 									
         				</div><!-- /.flat-iconbox -->
                 </div><!-- /.row -->
