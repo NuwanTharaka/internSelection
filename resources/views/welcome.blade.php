@@ -78,24 +78,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Bootstrap  -->
-    <link rel="stylesheet" type="text/css" href="{{URL::asset(web/stylesheets/bootstrap.css)}}" >
+    <link rel="stylesheet" type="text/css" href="{{URL::asset(intern/stylesheets/bootstrap.css)}}" >
 
     <!-- Theme Style -->
-    <link rel="stylesheet" type="text/css" href="{{URL::asset(web/stylesheets/style.css)}}">
+    <link rel="stylesheet" type="text/css" href="{{URL::asset(intern/stylesheets/style.css)}}">
 
     <!-- Responsive -->
-    <link rel="stylesheet" type="text/css" href="{{URL::asset(web/stylesheets/responsive.css)}}">
+    <link rel="stylesheet" type="text/css" href="{{URL::asset(intern/stylesheets/responsive.css)}}">
 
     <!-- Colors -->
-    <link rel="stylesheet" type="text/css" href="{{URL::asset(web/stylesheets/colors/color1.css)}}" id="colors">
+    <link rel="stylesheet" type="text/css" href="{{URL::asset(intern/stylesheets/colors/color1.css)}}" id="colors">
     
     <!-- Animation Style -->
-    <link rel="stylesheet" type="text/css" href="{{URL::asset(web/stylesheets/animate.css)}}">
+    <link rel="stylesheet" type="text/css" href="{{URL::asset(intern/stylesheets/animate.css)}}">
 
     <!-- Favicon and touch icons  -->
-    <link href="{{URL::asset(web/icon/apple-touch-icon-48-precomposed.png)}}" rel="apple-touch-icon-precomposed" sizes="48x48">
-    <link href="{{URL::asset(web/icon/apple-touch-icon-32-precomposed.png)}}" rel="apple-touch-icon-precomposed">
-    <link href="{{URL::asset(web/icon/favicon.png)}}" rel="shortcut icon">
+    <link href="{{URL::asset(intern/icon/apple-touch-icon-48-precomposed.png)}}" rel="apple-touch-icon-precomposed" sizes="48x48">
+    <link href="{{URL::asset(intern/icon/apple-touch-icon-32-precomposed.png)}}" rel="apple-touch-icon-precomposed">
+    <link href="{{URL::asset(intern/icon/favicon.png)}}" rel="shortcut icon">
 
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
