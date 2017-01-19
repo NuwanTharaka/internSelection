@@ -54,7 +54,7 @@ public function RegisterCoordinator(Request $request)
 	$this->validate($request,[
 			'username' => 'required',
 			'password' => 'required|min:3',
-			 //'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+			 'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
 			]);
 
  		$imageName = $request['Company_Name'].'.'.$request->image->getClientOriginalExtension();
@@ -135,6 +135,17 @@ return view('StudentDashboard',['student'=>$student,'companyname'=>$companyname 
   $student = DB::table('coordinator')->where('ID', Auth::User()->id)->first();	
 
 return view('CoordinatorDashboard')-> with('coordinator',$coordinator);
+	
+}
+	
+public function UpdateInfo(Request $request)
+	
+{	$fileName = Auth::User()->id.'.'.$request->filePDF->getClientOriginalExtension();
+    $request->filePDF->move(public_path('filePDF'), $fileName);
+  
+	$student = DB::table('students')->where('Index_no', Auth::User()->id)->update(['GPA' => $request['updateGPA']],['description' => $request['updatedes']],['cv_url' => $fileName]);
+
+return redirect()->back();
 	
 }
 	

@@ -35,6 +35,11 @@ Route::post('/loginDetails',[
     'as' => 'SignIn'
 ]);
 
+Route::post('/UpdateInfo',[
+    'uses' => 'UserController@UpdateInfo',
+    'as' => 'UpdateInfo'
+]);
+
 Route::get('/StudentDashboard', [
     	'uses' => 'UserController@StudentDashboard',
 		'as' => 'StudentDashboard',
