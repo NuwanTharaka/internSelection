@@ -229,7 +229,7 @@
                         <div class="clients-image clearfix">
                             <div class="item-three-column">
                                 <div class="item-img">
-                                    <img src="images/client/1.png" id="img1" alt="images">
+                                    <img src="{{URL::secureAsset('images/client/1.png')}}" id="img1" alt="images">
                                 </div>
                                 <p class="tooltip">Logistics</p>
                             </div>
@@ -418,11 +418,7 @@
         </a>   	
 
     </div>
-     <script>
-   $(document ).ready(function() {
-     $('#img1').attr('src','/new/image/src.jpg');   
-	});
-	</script>
+   
     <!-- Javascript -->
    <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery.min.js')}}"></script>
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/bootstrap.min.js')}}"></script>
@@ -432,7 +428,11 @@
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery.cookie.js')}}"></script>
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/parallax.js')}}"></script>
     <script type="text/javascript" src="{{URL::secureAsset('intern/	javascript/main.js')}}"></script>
-
+  <script>
+   $(document ).ready(function() {
+     $('#img1').attr('src','/new/image/src.jpg');   
+	});
+	</script>
 
 </body>
 </html>
