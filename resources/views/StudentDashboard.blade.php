@@ -213,9 +213,8 @@
                 </div><!-- /.row -->  
             </div><!-- /.container -->                      
         </div><!-- /.page-title -->
-		</div>
 
-        <div class="flat-row flat-general">
+        <div class="flat-row flat-general sidebar-right">
             <div class="container">
                 <div class="row">
                     <div class="general">
