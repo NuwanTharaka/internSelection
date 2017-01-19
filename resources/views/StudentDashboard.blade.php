@@ -254,20 +254,26 @@
                         </div><!-- /.promobox -->
 
                     </div><!-- /.general -->
-                </div><!-- /.row -->
-                
-                 <div class="flat-iconbox col-sm-4">
+                     <div class="flat-iconbox col-sm-4">
                             <div class="box-header">
-                                <div class="box-icon"><img src="images/services/1.jpg" alt="images"></div>
-                                <h5 class="box-title">Packaged goods transport</h5>
+                                <div class="box-icon"><img src="images/services/1.jpg" alt="images" class="img-rounded"></div>
                             </div>
-                            <div class="box-content">
-                                Focuses on the packaging requirements of goods in transit, in particular for items traveling overland by road or rail.                                
-                                <p class="box-readmore">
-                                    <a href="services-detail.html">Read more</a>
-                                </p>
-                            </div>
-        		</div><!-- /.flat-iconbox -->
+						<div class="col-sm-5 col-xs-6 tital " ><h6 class="flat-title-section">Name:</h6></div><div class="col-sm-7 col-xs-6 "><h6 class="flat-title-section"><span>Prasad</span></h6></div>
+										 <div class="clearfix"></div>
+									<div class="bot-border"></div>
+
+						<div class="col-sm-5 col-xs-6 tital " ><h6 class="flat-title-section">E-mail:</h6></div><div class="col-sm-7"> <h6 class="flat-title-section"><span>Shankar</span></h6></div>
+									  <div class="clearfix"></div>
+									<div class="bot-border"></div>
+
+						<div class="col-sm-5 col-xs-6 tital " ><h6 class="flat-title-section">Current GPA:</h6></div><div class="col-sm-7"> <h6 class="flat-title-section"><span>Huddedar</span></h6></div>
+									  <div class="clearfix"></div>
+									<div class="bot-border"></div>
+
+						<div class="col-sm-5 col-xs-6 tital " ><h6 class="flat-title-section">Description:</h6></div><div class="col-sm-7"><h6 class="flat-title-section"><span style="font-size: 10px; text-align: justify">jslkdhdskjgh heueio uidofueio uffi uvoiueio u uoieu u ur3uriu u 3uri 3urui3 roir ui u 3ur 3ru</span></h6></div>
+									
+        				</div><!-- /.flat-iconbox -->
+                </div><!-- /.row -->
             </div><!-- /.container -->
         </div><!-- /.blog -->
        
