@@ -30,4 +30,7 @@ Route::get('/RegisterCompany', [
     	'uses' => 'UserController@RegisterCompany',
 		'as' => 'RegisterCompany'
 		]);	
-		
+Route::post('/loginDetails',[
+    'uses' => 'UserController@loginUser',
+    'as' => 'SignIn'
+]);

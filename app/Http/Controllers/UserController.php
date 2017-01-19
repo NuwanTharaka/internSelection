@@ -77,6 +77,35 @@ return view('companyreg');
 	
 }
 	
+	
+	  public function loginUser(Request $request)
+    {
+
+        $this->validate($request, [
+            'index_no' => 'required',
+            'password' => 'required'
+        ]);
+
+        $index_no = $request['index_no'];
+        $password = $request['password'];
+
+
+        if (Auth::attempt(['index_no' => $index_no, 'password' => $password])) {
+            // Authentication passed...
+            if(Auth::user()->type=="S"){
+                return redirect()->route('StudentDashboard');
+            }elseif (Auth::user()->type=="C"){
+                return redirect()->route('CompanyDashboard');
+            }else{
+                return redirect()->route('AdminDashboard');
+            }
+
+        }
+        else{
+            return view('userLogin', ['customMessage' => 'login failed, try again']);
+        }
+    }
+	
 }
 
 ?>
