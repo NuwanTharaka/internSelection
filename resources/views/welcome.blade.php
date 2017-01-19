@@ -157,25 +157,6 @@
                                         <li><a href="portfolio-masonry.html">Layout 03</a></li>
                                     </ul><!-- /.submenu -->
                                 </li>                                              
-                                <li><a href="blog.html">News</a>
-                                    <ul class="submenu">
-                                        <li><a href="blog.html">Default layout</a></li>
-                                        <li><a href="blog-grid.html">Grid layout</a></li>
-                                    </ul><!-- /.submenu -->
-                                </li>
-                                <li><a href="#">Pages</a>
-                                    <ul class="submenu">
-                                        <li><a href="one-page.html">One page</a></li>
-                                        <li><a href="track-an-order.html">Track your shipment</a></li>
-                                        <li><a href="quote.html">Request a quote</a></li>
-                                        <li><a href="shortcode.html">Shortcode</a></li>
-                                        <li><a href="typography.html">Typography</a></li>
-                                        <li><a href="404.html">404 page</a></li>
-                                        <li><a href="search.html">Search results</a></li>
-                                    </ul><!-- /.submenu -->
-                                </li>
-                                <li><a href="shop.html">Shop</a></li>
-                                <li><a href="contact.html">Contact</a></li>
                             </ul><!-- /.menu -->                                        
                         </nav><!-- /.mainnav -->  
                     </div><!-- /.nav-wrap -->
