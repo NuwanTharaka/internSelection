@@ -1,69 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-        <!-- CSRF Token -->
-<meta name="csrf-token" content="{{ csrf_token() }}">
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-      <form action='{{route('RegisterStudent')}}' method="post">
-<fieldset >
-<legend>Register</legend>
-<label for='Index_no' >Index_no*: </label>
-<input type='text' name='Index_no' id='Index_no' maxlength="50" />
-<label for='email' >Email Address*:</label>
-<input type='text' name='email' id='email' maxlength="50" />
-
-<label for='username' >UserName*:</label>
-<input type='text' name='username' id='username' maxlength="50" />
-<input type="hidden" name="_token" value = "{{ csrf_token() }}">
-<label for='password' >Password*:</label>
-<input type='password' name='password' id='password' maxlength="50" />
-<input type='submit' name='Submit' value='Submit' />
-
-</fieldset>
-</form>
-
-
-      <form action='{{route('RegisterCoordinator')}}' method="post">
-<fieldset >
-<legend>Register Coordinator</legend>
-<label for='Index_no' >Index_no*: </label>
-<input type='text' name='Index_no' id='Index_no' maxlength="50" />
-<label for='email' >Email Address*:</label>
-<input type='text' name='email' id='email' maxlength="50" />
-<label for='Company_Name' >Company_Name*:</label>
-<input type='text' name='Company_Name' id='Company_Name' maxlength="50" />
-
-<label for='username' >UserName*:</label>
-<input type='text' name='username' id='username' maxlength="50" />
-<input type="hidden" name="_token" value = "{{ csrf_token() }}">
-<label for='password' >Password*:</label>
-<input type='password' name='password' id='password' maxlength="50" />
-<input type='submit' name='Submit' value='Submit' />
-
-</fieldset>	
-</form>
-        </div>
-    </body>
-</html>
-
-
-
-
-
-<!DOCTYPE html>
 <!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
 <head>
@@ -78,24 +13,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Bootstrap  -->
-    <link rel="stylesheet" type="text/css" href="{{URL::asset(web/stylesheets/bootstrap.css)}}" >
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" >
 
     <!-- Theme Style -->
-    <link rel="stylesheet" type="text/css" href="{{URL::asset(web/stylesheets/style.css)}}">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 
     <!-- Responsive -->
-    <link rel="stylesheet" type="text/css" href="{{URL::asset(web/stylesheets/responsive.css)}}">
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
 
     <!-- Colors -->
-    <link rel="stylesheet" type="text/css" href="{{URL::asset(web/stylesheets/colors/color1.css)}}" id="colors">
+    <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
     
     <!-- Animation Style -->
-    <link rel="stylesheet" type="text/css" href="{{URL::asset(web/stylesheets/animate.css)}}">
+    <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
 
     <!-- Favicon and touch icons  -->
-    <link href="{{URL::asset(web/icon/apple-touch-icon-48-precomposed.png)}}" rel="apple-touch-icon-precomposed" sizes="48x48">
-    <link href="{{URL::asset(web/icon/apple-touch-icon-32-precomposed.png)}}" rel="apple-touch-icon-precomposed">
-    <link href="{{URL::asset(web/icon/favicon.png)}}" rel="shortcut icon">
+    <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed" sizes="48x48">
+    <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
+    <link href="icon/favicon.png" rel="shortcut icon">
 
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -276,23 +211,43 @@
                                 <div class="comments-area">
                                     <div class="comment-respond">
                                         <h4 class="comment-reply-title">Personel Details</h4>
- <form action='{{route('RegisterStudent')}}' method="post">
-<fieldset >
-<legend>Register</legend>
-<label for='Index_no' >Index_no*: </label>
-<input type='text' name='Index_no' id='Index_no' maxlength="50" />
-<label for='email' >Email Address*:</label>
-<input type='text' name='email' id='email' maxlength="50" />
+                                        <form class="comment-form">
+                                            <p class="comment-form-author">
+                                                <label>Full Name <span class="required">*</span></label> <input id="author" name="author" type="text" required="required">
+                                            </p>
+                                            <p class="comment-form-email">
+                                                <label>Email <span class="required">*</span></label> <input id="email" name="email" type="email" required="required">
+                                            </p>
+                                            <p class="comment-form-url">
+                                                <label><span>Linkeden Account</span></label> <input id="url" name="url" type="text">
+                                            </p>
+                                            <p class="comment-notes"><span id="email-notes">Add a short descrption about you..!</span><span class="required">*</span></p>
+                                            <p class="comment-form-comment">
+                                                <label>Description</label> 
+                                                <textarea id="comment" name="comment" required></textarea>
+                                            </p>
+                                            <!-- image-preview-filename input [CUT FROM HERE]-->
+											<div class="input-group image-preview">
+												<input type="text" class="form-control image-preview-filename"> <!-- don't give a name === doesn't send on POST/GET -->
+												<span class="input-group-btn">
+													<!-- image-preview-clear button -->
+													<button type="button" class="btn btn-default image-preview-clear" style="display:none;">
+														<span class="fa fa-remove"></span> Clear
+													</button>
+													<!-- image-preview-input -->
+													<div class="btn btn-default image-preview-input">
+														<span class="fa fa-file"></span>
+														<span class="image-preview-input-title">Choose File</span>
+														<input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview"/> <!-- rename it -->
+													</div>
+												</span>
 
-<label for='username' >UserName*:</label>
-<input type='text' name='username' id='username' maxlength="50" />
-<input type="hidden" name="_token" value = "{{ csrf_token() }}">
-<label for='password' >Password*:</label>
-<input type='password' name='password' id='password' maxlength="50" />
-<input type='submit' name='Submit' value='Submit' />
-
-</fieldset>
-</form><!-- /.comment-form -->
+											</div><!-- /input-group image-preview [TO HERE]--> 
+                                            
+                                            <p class="form-submit">
+                                                <input name="submit" type="submit" id="submit" class="submit" value="Save Settings">
+                                            </p>
+                                        </form><!-- /.comment-form -->
                                     </div><!-- /.comment-respond -->
                                 </div><!-- /.comments-area -->
                             </div><!-- /.main-content-wrap -->
