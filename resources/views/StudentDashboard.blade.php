@@ -263,7 +263,7 @@
 						 <div class="col-sm-5 col-xs-6 tital " ><h6 class="flat-title-section">GPA:</h6></div><div class="col-sm-7"><h6 class="flat-title-section"><span><input type="text" style="font-size: 10px; text-align: justify">{{$student->GPA}}</span></h6></div>
 
 						 <div class="col-sm-5 col-xs-6 tital " ><h6 class="flat-title-section">Description:</h6></div><div class="col-sm-7"><h6 class="flat-title-section"><span><input type="text" style="font-size: 10px; text-align: justify">{{$student->description}}</span></h6></div>
-						 <input type="file" name="cv" accept=".doc|.pdf">
+						 <input type="file" name="cv">
 						 <input name="submit" type="submit" id="submit" class="submit" value="submit">
 						 </form>
 						
