@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\Input;
 use Hash;
 use View;
 use Session;
-Use Input;
 Use App\Student;
 Use App\Coordinator;
 Use DB;
