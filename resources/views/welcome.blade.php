@@ -355,11 +355,21 @@
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery.min.js')}}"></script>
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/bootstrap.min.js')}}"></script>
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery.easing.js')}}"></script> 
+    <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/owl.carousel.js')}}"></script>
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery-waypoints.js')}}"></script>
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery-countTo.js')}}"></script> 
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery.cookie.js')}}"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>    
+    <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/gmap3.min.js')}}"></script>
+    <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery-validate.js')}}"></script>
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/parallax.js')}}"></script>
-    <script type="text/javascript" src="{{URL::secureAsset('intern/	javascript/main.js')}}"></script>
+    <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/main.js')}}"></script>
+    
+    <!-- Revolution Slider -->
+    <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery.themepunch.tools.min.js')}}"></script>
+    <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery.themepunch.revolution.min.js')}}"></script>
+    <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/slider.js')}}"></script>
+
 
 </body>
 </html>
