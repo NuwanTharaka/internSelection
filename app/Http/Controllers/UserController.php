@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Events\emailVerify;
 use Illuminate\Support\Facades\Event;
 use App\functions\functions;
+use Illuminate\Support\Facades\Input;
 use Hash;
 use View;
 use Session;
