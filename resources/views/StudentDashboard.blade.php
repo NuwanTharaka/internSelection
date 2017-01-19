@@ -245,7 +245,7 @@
                     </div><!-- /.general -->
                      <div class="flat-iconbox col-sm-4">
                             <div class="box-header">
-                                <div class="box-icon"><img src="images/services/1.jpg" alt="images" class="img-rounded"></div>
+                                <div class="box-icon"><img src="{{URL::secureAsset('intern/images/services/1.jpg" alt="images" class="img-rounded')}}"></div>
                             </div>
 						<div class="col-sm-5 col-xs-6 tital " ><h6 class="flat-title-section">Name:</h6></div><div class="col-sm-7 col-xs-6 "><h6 class="flat-title-section"><span>{{$student->username}}</span></h6></div>
 										 <div class="clearfix"></div>
@@ -258,8 +258,15 @@
 						<div class="col-sm-5 col-xs-6 tital " ><h6 class="flat-title-section">Current GPA:</h6></div><div class="col-sm-7"> <h6 class="flat-title-section"><span>{{$student->email}}</span></h6></div>
 									  <div class="clearfix"></div>
 									<div class="bot-border"></div>
+									
+						<form class="update_info">
+						 <div class="col-sm-5 col-xs-6 tital " ><h6 class="flat-title-section">GPA:</h6></div><div class="col-sm-7"><h6 class="flat-title-section"><span><input type="text" style="font-size: 10px; text-align: justify">{{$student->GPA}}</span></h6></div>
 
 						 <div class="col-sm-5 col-xs-6 tital " ><h6 class="flat-title-section">Description:</h6></div><div class="col-sm-7"><h6 class="flat-title-section"><span><input type="text" style="font-size: 10px; text-align: justify">{{$student->description}}</span></h6></div>
+						 <input type="file" name="cv" accept=".doc|.pdf">
+						 <input name="submit" type="submit" id="submit" class="submit" value="submit">
+						 </form>
+						
 									
         				</div><!-- /.flat-iconbox -->
                 </div><!-- /.row -->
