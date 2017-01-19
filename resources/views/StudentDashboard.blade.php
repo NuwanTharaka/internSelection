@@ -245,7 +245,7 @@
                     </div><!-- /.general -->
                      <div class="flat-iconbox col-sm-4">
                             <div class="box-header">
-                                <div class="box-icon"><img src="{{URL::secureAsset('intern/images/services/1.jpg" alt="images" class="img-rounded')}}"></div>
+                                <div class="box-icon"><img src="{{URL::secureAsset('intern/images/services/1.jpg')}}" alt="images" class="img-rounded"></div>
                             </div>
 						<div class="col-sm-5 col-xs-6 tital " ><h6 class="flat-title-section">Name:</h6></div><div class="col-sm-7 col-xs-6 "><h6 class="flat-title-section"><span>{{$student->username}}</span></h6></div>
 										 <div class="clearfix"></div>
