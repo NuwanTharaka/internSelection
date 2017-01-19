@@ -217,7 +217,7 @@
         <div class="flat-row flat-general sidebar-right">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-8">
+                    <div class="content-wrap col-sm-8">
                         <h3 class="flat-title-section style style1"><span>Available companies</span></h3>
 
                         <div class="flat-divider d20px"></div>
