@@ -217,7 +217,6 @@
         <div class="flat-row flat-general sidebar-right">
             <div class="container">
                 <div class="row">
-                	<div class="row">
 					  <div class="panel panel-info">
 							<div class="panel-heading">
 							  <h3 class="panel-title">Sheena Shrestha</h3>
@@ -292,11 +291,10 @@
           </div>
         </div>
       </div>
-				</div>
 			</div>
 		</div>
 
-        <div class="flat-row flat-general">
+        <div class="flat-row flat-general sidebar-left">
             <div class="container">
                 <div class="row">
                     <div class="general">
