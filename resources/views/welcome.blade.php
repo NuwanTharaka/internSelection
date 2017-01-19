@@ -27,7 +27,7 @@
 
 <label for='username' >UserName*:</label>
 <input type='text' name='username' id='username' maxlength="50" />
-<input type="hidden" name="_token" value = "{{Session::token()}}">
+<input type="hidden" name="_token" value = "{{ csrf_token() }}">
 <label for='password' >Password*:</label>
 <input type='password' name='password' id='password' maxlength="50" />
 <input type='submit' name='Submit' value='Submit' />
@@ -48,7 +48,7 @@
 
 <label for='username' >UserName*:</label>
 <input type='text' name='username' id='username' maxlength="50" />
-<input type="hidden" name="_token" value = "{{Session::token()}}">
+<input type="hidden" name="_token" value = "{{ csrf_token() }}">
 <label for='password' >Password*:</label>
 <input type='password' name='password' id='password' maxlength="50" />
 <input type='submit' name='Submit' value='Submit' />
