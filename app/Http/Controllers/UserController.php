@@ -106,7 +106,7 @@ return view('companyreg');
         }
     }
 	
-	public function RegisterCompany(Request $request)
+	public function StudentDashboard(Request $request)
 {	
  
 return view('StudentDashboard');
