@@ -261,7 +261,7 @@
 									
 						<form class="update_info" action='{{route('UpdateInfo')}}' method="post">
 						 <div class="col-sm-5 col-xs-6 tital " ><h6 class="flat-title-section">GPA:</h6></div><div class="col-sm-7"><h6 class="flat-title-section"><span><input type="text" name="updateGPA" style="font-size: 10px; text-align: justify" required="required">{{$student->GPA}}</span></h6></div>
-
+						<input type="hidden" name="_token" value = "{{Session::token()}}">
 						 <div class="col-sm-5 col-xs-6 tital " ><h6 class="flat-title-section">Description:</h6></div><div class="col-sm-7"><h6 class="flat-title-section"><span><input type="text" name="updatedes" style="font-size: 10px; text-align: justify" required="required">{{$student->description}}</span></h6></div>
 						 <input type="file" name="filePDF">
 						 <input name="submit" type="submit" id="submit" class="submit" value="submit">
