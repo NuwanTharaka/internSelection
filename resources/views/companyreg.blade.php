@@ -53,8 +53,8 @@
                         <div class="flat-wrapper">
                             <div class="custom-info">
   								<form action='{{route('SignIn')}}' method="post">                   
-									<span><i class="fa fa-user"></i> <input id="user"  name = "index_no" type="text" required="" autocomplete="off"></span> 
-									<span><i class="fa fa-key"></i> <input id="pass" name = "password" type="password" required="" autocomplete="off"></span> 
+									<span><i class="fa fa-user"></i> <input id="user"  name = "index_no" type="text" class="user-name" required="" autocomplete="off"></span> 
+									<span><i class="fa fa-key"></i> <input id="pass" name = "password" type="password" class="password" required="" autocomplete="off"></span> 
 									 <input type="hidden" name="_token" value = "{{Session::token()}}">
 									<span> <input type="submit" class="login-submit" value="Login"></span>
                                  </form>
