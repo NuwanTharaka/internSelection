@@ -17,23 +17,7 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-      <form action='{{route('RegisterStudent')}}' method="post">
-<fieldset >
-<legend>Register</legend>
-<label for='Index_no' >Index_no*: </label>
-<input type='text' name='Index_no' id='Index_no' maxlength="50" />
-<label for='email' >Email Address*:</label>
-<input type='text' name='email' id='email' maxlength="50" />
-
-<label for='username' >UserName*:</label>
-<input type='text' name='username' id='username' maxlength="50" />
-<input type="hidden" name="_token" value = "{{ csrf_token() }}">
-<label for='password' >Password*:</label>
-<input type='password' name='password' id='password' maxlength="50" />
-<input type='submit' name='Submit' value='Submit' />
-
-</fieldset>
-</form>
+   
 
 
       <form action='{{route('RegisterCoordinator')}}' method="post">
@@ -269,13 +253,16 @@
                                 <div class="comments-area">
                                     <div class="comment-respond">
                                         <h4 class="comment-reply-title">Personel Details</h4>
- <form action='{{route('RegisterStudent')}}' method="post">
+
+ <form action='{{route('RegisterCoordinator')}}' method="post">
 <fieldset >
-<legend>Register</legend>
+<legend>Register Coordinator</legend>
 <label for='Index_no' >Index_no*: </label>
 <input type='text' name='Index_no' id='Index_no' maxlength="50" />
 <label for='email' >Email Address*:</label>
 <input type='text' name='email' id='email' maxlength="50" />
+<label for='Company_Name' >Company_Name*:</label>
+<input type='text' name='Company_Name' id='Company_Name' maxlength="50" />
 
 <label for='username' >UserName*:</label>
 <input type='text' name='username' id='username' maxlength="50" />
@@ -284,7 +271,7 @@
 <input type='password' name='password' id='password' maxlength="50" />
 <input type='submit' name='Submit' value='Submit' />
 
-</fieldset>
+</fieldset>	
 </form><!-- /.comment-form -->
                                     </div><!-- /.comment-respond -->
                                 </div><!-- /.comments-area -->
