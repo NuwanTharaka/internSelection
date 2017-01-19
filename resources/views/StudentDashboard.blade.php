@@ -217,7 +217,7 @@
         <div class="flat-row flat-general sidebar-right">
             <div class="container">
                 <div class="row">
-                    <div class="general">
+                    <div class="col-sm-8">
                         <h3 class="flat-title-section style style1"><span>Available companies</span></h3>
 
                         <div class="flat-divider d20px"></div>
@@ -255,6 +255,19 @@
 
                     </div><!-- /.general -->
                 </div><!-- /.row -->
+                
+                 <div class="flat-iconbox col-sm-4">
+                            <div class="box-header">
+                                <div class="box-icon"><img src="images/services/1.jpg" alt="images"></div>
+                                <h5 class="box-title">Packaged goods transport</h5>
+                            </div>
+                            <div class="box-content">
+                                Focuses on the packaging requirements of goods in transit, in particular for items traveling overland by road or rail.                                
+                                <p class="box-readmore">
+                                    <a href="services-detail.html">Read more</a>
+                                </p>
+                            </div>
+        		</div><!-- /.flat-iconbox -->
             </div><!-- /.container -->
         </div><!-- /.blog -->
        
