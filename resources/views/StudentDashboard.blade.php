@@ -237,7 +237,7 @@
                     <dd>Male</dd>
                   </dl>
                 </div>-->
-                <div class=" col-md-9 col-lg-9 "> 
+                <div> 
                   <table class="table table-user-information">
                     <tbody>
                       <tr>
@@ -294,7 +294,7 @@
 			</div>
 		</div>
 
-        <div class="flat-row flat-general sidebar-left">
+        <div class="flat-row flat-general">
             <div class="container">
                 <div class="row">
                     <div class="general">
