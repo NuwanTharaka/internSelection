@@ -140,7 +140,7 @@ return view('CoordinatorDashboard')-> with('coordinator',$coordinator);
 	
 public function UpdateInfo(Request $request)
 	
-{	$file = Input::file('filePDF');
+{	$file = $request->file('filePDF');
 	$fileName = Auth::User()->id.'.'.$request->$file->getClientOriginalExtension();
     $file->move(base_path().'/public/uploads/', $fileName);
   
