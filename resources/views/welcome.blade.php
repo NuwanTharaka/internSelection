@@ -466,14 +466,14 @@
     </div>
     
     <!-- Javascript -->
-    <script type="text/javascript" src="{{URL::secureAsset('javascript/jquery.min.js')}}"></script>
-    <script type="text/javascript" src="{{URL::secureAsset('javascript/bootstrap.min.js')}}"></script>
-    <script type="text/javascript" src="{{URL::secureAsset('javascript/jquery.easing.js')}}"></script> 
-    <script type="text/javascript" src="{{URL::secureAsset('javascript/jquery-waypoints.js')}}"></script>
-    <script type="text/javascript" src="{{URL::secureAsset('javascript/jquery-countTo.js')}}"></script> 
-    <script type="text/javascript" src="{{URL::secureAsset('javascript/jquery.cookie.js')}}"></script>
-    <script type="text/javascript" src="{{URL::secureAsset('javascript/parallax.js')}}"></script>
-    <script type="text/javascript" src="{{URL::secureAsset('javascript/main.js')}}"></script>
+    <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery.easing.js')}}"></script> 
+    <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery-waypoints.js')}}"></script>
+    <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery-countTo.js')}}"></script> 
+    <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery.cookie.js')}}"></script>
+    <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/parallax.js')}}"></script>
+    <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/main.js')}}"></script>
 
 </body>
 </html>
