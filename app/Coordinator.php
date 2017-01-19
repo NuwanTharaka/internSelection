@@ -15,7 +15,7 @@ class Coordinator extends Model
      */
 	 
    protected $fillable = [
-        'ID', 'Company_Name','username','password','email'
+        'ID', 'Company_Name','username','password','email','img_url'
     ];
 
 	public function Coordinator(){

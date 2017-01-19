@@ -215,24 +215,24 @@
 
                         <p>You can also decide to outsource your fleet with or without your employees. By doing this you will achieve a higher efficiency and a better focus on your core business. You will have the assurance your logistic processes are in the best of hands.</p>
 
-                        <div class="clients-image clearfix">
+                         <div class="clients-image clearfix">
                             <div class="item-three-column">
                                 <div class="item-img">
-                                    <img src="{{URL::secureAsset('images/client/1.png')}}" id="img1" alt="images">
+                                    <img src="" id="img1" alt="images">
                                 </div>
-                                <p class="tooltip">Logistics</p>
+                                <p class="tooltip" id="imgc1">Logistics</p>
                             </div>
                             <div class="item-three-column">
                                 <div class="item-img">
                                     <img src="images/client/2.png" id="img2" alt="images">
                                 </div>
-                                <p class="tooltip">Royal Resort</p>
+                                <p class="tooltip" id="imgc2">Royal Resort</p>
                             </div>
                             <div class="item-three-column">
                                 <div class="item-img">
                                     <img src="images/client/3.png" id="img3"  alt="images">
                                 </div>
-                                <p class="tooltip">Hexagon</p>
+                                <p class="tooltip" id="imgc3">Hexagon</p>
                             </div>
                         
                         </div><!-- /.flat-clients-image -->
@@ -345,9 +345,23 @@
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery.cookie.js')}}"></script>
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/parallax.js')}}"></script>
     <script type="text/javascript" src="{{URL::secureAsset('intern/	javascript/main.js')}}"></script>
-  <script>
+    <script>
    $(document ).ready(function() {
-     $('#img1').attr('src','/new/image/src.jpg');   
+	   var tempArray = <?php echo json_encode($companyurl); ?>;
+	   var tempurl = "{{URL::secureAsset('images/replace')}}";
+	   var temp1 = tempurl.replace("replace", tempArray[0]);
+	   var temp2 = tempurl.replace("replace", tempArray[1]);
+		
+     $('#img1').attr('src',temp1);   
+
+	  $('#img2').attr('src',temp2);   
+
+	  $('#img3').attr('src',"");   
+	   var tempArray1 = <?php echo json_encode($companyname); ?>;
+	   document.getElementById('imgc1').innerHTML = tempArray1[0];
+	   document.getElementById('imgc2').innerHTML = tempArray1[1];
+	   document.getElementById('imgc3').innerHTML = tempArray1[2];
+	  
 	});
 	</script>
 

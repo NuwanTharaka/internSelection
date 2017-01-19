@@ -13,6 +13,7 @@ use Session;
 Use Input;
 Use App\Student;
 Use App\Coordinator;
+Use DB;
 
 class UserController extends Controller{
 	
@@ -41,7 +42,7 @@ public function RegisterStudent(Request $request)
 		$student->email = $request['email'];
 		$student->save();
 	$user=new User();
-	$user->index_no = $request['Index_no'];
+	$user->id = $request['Index_no'];
 	$user->password = bcrypt($request['password']);
 	$user->type = 'Student';
 	$user->save();
@@ -52,18 +53,22 @@ public function RegisterCoordinator(Request $request)
  
 	$this->validate($request,[
 			'username' => 'required',
-			'password' => 'required|min:3'
+			'password' => 'required|min:3',
+			 //'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
 			]);
-	
+
+ 		$imageName = $request['Company_Name'].'.'.$request->image->getClientOriginalExtension();
+        $request->image->move(public_path('images'), $imageName);
 		$Coordinator = new Coordinator();
 		$Coordinator->ID = $request['Index_no'];
 		$Coordinator->Company_Name = $request['Company_Name'];
 		$Coordinator->username = $request['username'];
 		$Coordinator->password = bcrypt($request['password']);
 		$Coordinator->email = $request['email'];
+		$Coordinator->img_url = $imageName;
 		$Coordinator->save();
 	$user=new User();
-	$user->index_no = $request['Index_no'];
+	$user->ID= $request['Index_no'];
 	$user->password = bcrypt($request['password']);
 	$user->type = 'Coordinator';
 	$user->save();
@@ -90,7 +95,7 @@ return view('companyreg');
         $password = $request['password'];
 
 
-        if (Auth::attempt(['index_no' => $index_no, 'password' => $password])) {
+        if (Auth::attempt(['id' => $index_no, 'password' => $password])) {
             // Authentication passed...
             if(Auth::user()->type=="Student"){
                 return redirect()->route('StudentDashboard');
@@ -108,8 +113,28 @@ return view('companyreg');
 	
 	public function StudentDashboard(Request $request)
 {	
- 
-return view('StudentDashboard');
+  $student = DB::table('students')->where('index_no', Auth::User()->id)->first();
+$companyDetails = DB::table('studentcompany')
+            ->leftJoin('coordinator', 'studentcompany.Company', '=', 'coordinator.company_name')
+            ->where('StudentID', Auth::User()->id)->pluck('username','img_url');
+			$companyname=[];
+			$companyurl=[];
+			
+		foreach ($companyDetails as $username => $title) {
+			
+    		array_push($companyname,$title);
+			 $studentqw = DB::table('coordinator')->where('username', $title)->pluck('img_url')->first();
+			array_push($companyurl,$studentqw);
+		}
+return view('StudentDashboard',['student'=>$student,'companyname'=>$companyname ,'companyurl'=>$companyurl]);
+	
+}
+
+	public function coordinatorDashboard(Request $request)
+{	
+  $student = DB::table('coordinator')->where('ID', Auth::User()->id)->first();	
+
+return view('CoordinatorDashboard')-> with('coordinator',$coordinator);
 	
 }
 	

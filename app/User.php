@@ -20,7 +20,7 @@ public function User()
 	return $this ->hasOne('App\Coordinator');
 	}
     protected $fillable = [
-        'index_no', 'password','type'
+        'id', 'password','type'
     ];
 
     /**

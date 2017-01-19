@@ -227,7 +227,7 @@
 <input type='text' name='email' id='email' maxlength="50" />
 <label for='Company_Name' >Company_Name*:</label>
 <input type='text' name='Company_Name' id='Company_Name' maxlength="50" />
-
+<input type="file" name="image" />
 <label for='username' >UserName*:</label>
 <input type='text' name='username' id='username' maxlength="50" />
 <input type="hidden" name="_token" value = "{{ csrf_token() }}">
