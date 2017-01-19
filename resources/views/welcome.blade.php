@@ -53,6 +53,7 @@
                                  <form action='{{route('SignIn')}}' method="post" class="login-form">                       
 									<span><i class="fa fa-user"></i><input type="text"  name = "index_no"  class="user-name" placeholder="Username"></span> 
 									<span><i class="fa fa-key"></i><input type="password" name = "password"  class="password" placeholder="Password"></span> 
+									<input type="hidden" name="_token" value = "{{ csrf_token() }}">
 									<span> <input type="submit" class="login-submit" value="Login"></span>
                                  </form>
                             </div>
