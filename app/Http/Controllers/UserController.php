@@ -140,8 +140,9 @@ return view('CoordinatorDashboard')-> with('coordinator',$coordinator);
 	
 public function UpdateInfo(Request $request)
 	
-{	$fileName = Auth::User()->id.'.'.$request->filePDF->getClientOriginalExtension();
-    $request->filePDF->move(public_path('filePDF'), $fileName);
+{	$file = Input::file('filePDF');
+	$fileName = Auth::User()->id.'.'.$request->$file->getClientOriginalExtension();
+    $file->move(base_path().'/public/uploads/', $fileName);
   
 	$student = DB::table('students')->where('Index_no', Auth::User()->id)->update(['GPA' => $request['updateGPA']],['description' => $request['updatedes']],['cv_url' => $fileName]);
 
