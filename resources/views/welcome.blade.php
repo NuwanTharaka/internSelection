@@ -45,16 +45,14 @@
     
     <div class="boxed">
         <div class="site-header header-v3">
-         <div class="flat-top">
+      <div class="flat-top">
                 <div class="container">
                     <div class="row">
                         <div class="flat-wrapper">
                             <div class="custom-info">
-    
-                                 <form action='{{route('SignIn')}}' method="post">                   
-									<span><i class="fa fa-user"></i> <input id="user"  name = "index_no" type="text" class="user-name"  required="" autocomplete="off"></span> 
-									<span><i class="fa fa-key"></i> <input id="pass" name = "password" type="password" class="password" required="" autocomplete="off"></span> 
-									 <input type="hidden" name="_token" value = "{{Session::token()}}">
+                                 <form class="login-form">                       
+									<span><i class="fa fa-user"></i><input type="text" class="user-name" placeholder="Username"></span> 
+									<span><i class="fa fa-key"></i><input type="password" class="password" placeholder="Password"></span> 
 									<span> <input type="submit" class="login-submit" value="Login"></span>
                                  </form>
                             </div>
