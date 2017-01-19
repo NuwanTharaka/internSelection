@@ -183,11 +183,11 @@
             </header><!-- /.header -->
         </div><!-- /.site-header -->
         
-              <div class="tp-banner-container">
+          <div class="tp-banner-container">
             <div class="tp-banner" >
                 <ul>
                     <li data-transition="random-static" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
-                        <img src="images/slides/1.jpg" alt="slider-image" />
+                        <img src="{{URL::secureAsset('intern/images/slides/1.jpg" alt="slider-image')}}" />
                         <div class="tp-caption sfl title-slide center" data-x="40" data-y="100" data-speed="1000" data-start="1000" data-easing="Power3.easeInOut">                            
                             Standard sea freight<br>services
                         </div>  
@@ -200,7 +200,7 @@
                     </li>
 
                     <li data-transition="random-static" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
-                        <img src="images/slides/2.jpg" alt="slider-image" />
+                        <img src="{{URL::secureAsset('intern/images/slides/1.jpg" alt="slider-image')}}" />
                         <div class="tp-caption sfl title-slide center" data-x="40" data-y="100" data-speed="1000" data-start="1000" data-easing="Power3.easeInOut">                            
                             International road<br>transport
                         </div>  
@@ -213,7 +213,7 @@
                     </li>
 
                     <li data-transition="slidedown" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
-                        <img src="images/slides/3.jpg" alt="slider-image" />
+                        <img src="{{URL::secureAsset('intern/images/slides/1.jpg" alt="slider-image')}}"/>
                         <div class="tp-caption sfl title-slide center" data-x="40" data-y="100" data-speed="1000" data-start="1000" data-easing="Power3.easeInOut">                            
                             Warehousing and<br>storage
                         </div>  
