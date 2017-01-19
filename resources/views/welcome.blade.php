@@ -45,24 +45,25 @@
     
     <div class="boxed">
         <div class="site-header header-v3">
-            <div class="flat-top">
+         <div class="flat-top">
                 <div class="container">
                     <div class="row">
                         <div class="flat-wrapper">
                             <div class="custom-info">
                                  <form class="login-form">                       
 									<span><i class="fa fa-user"></i><input type="text" class="user-name" placeholder="Username"></span> 
-									<span> <input type="submit" class="login-submit" value="Log Out"></span>
+									<span><i class="fa fa-key"></i><input type="password" class="password" placeholder="Password"></span> 
+									<span> <input type="submit" class="login-submit" value="Login"></span>
                                  </form>
                             </div>
 
                             <div class="welcome-text">
-								<span>Welcome to the Intern Portal </span>
+								<span>Welcome to the Internship Login Portal </span>
                             </div>
                         </div><!-- /.flat-wrapper -->
                     </div><!-- /.row -->
                 </div><!-- /.container -->
-            </div><!-- /.flat-top -->
+            </div><!-- /.flat-top --><!-- /.flat-top -->
           
             <header id="header" class="header"> 
                 <div class="header-wrap">
