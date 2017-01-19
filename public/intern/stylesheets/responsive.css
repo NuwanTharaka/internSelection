@@ -123,6 +123,12 @@
 	.blog-home .flat-item {
 		width: 100%;
 	}
+	
+
+	
+	.blog-single .main-content {
+		width: 100%;
+	}
 
 	.header-v2 .header-wrap,
 	.flat-general.sidebar-right .general-sidebars,
@@ -317,6 +323,9 @@
 @media only screen and (max-width: 479px) {
 	.flat-iconbox .box-header .box-icon {
 		float: none;
+		margin: 0 auto;
+		display: inline-block;
+		
 	}
 
 	.flat-tabs ul.menu-tabs li {
