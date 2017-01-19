@@ -601,7 +601,7 @@
     var retinaLogos = function() {
       var retina = window.devicePixelRatio > 1 ? true : false;
         if( retina ) {
-            $( '.header .logo' ).find('img').attr( {src:'./images/logo@2x.png',width:'246',height:'60'} );   
+            $( '.header .logo' ).find('img').attr( {src:'http://internselection.herokuapp.com/images/logo@2x.png',width:'246',height:'60'} );   
         }
     };   
 
