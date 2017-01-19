@@ -70,7 +70,7 @@
                 <div class="header-wrap">
                     <div id="logo" class="logo">
                         <a href="index.html">
-                            <img src="{{URL::secureAsset('intern/images/logo@2x.png')}}" alt="images">
+                            <img src="{{URL::secureAsset('intern/images/logo.png')}}" alt="images">
                         </a>
                     </div><!-- /.logo -->
                     <div class="btn-menu">
