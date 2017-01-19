@@ -92,9 +92,9 @@ return view('companyreg');
 
         if (Auth::attempt(['index_no' => $index_no, 'password' => $password])) {
             // Authentication passed...
-            if(Auth::user()->type=="S"){
+            if(Auth::user()->type=="Student"){
                 return redirect()->route('StudentDashboard');
-            }elseif (Auth::user()->type=="C"){
+            }elseif (Auth::user()->type=="Coordinator"){
                 return redirect()->route('CompanyDashboard');
             }else{
                 return redirect()->route('AdminDashboard');
