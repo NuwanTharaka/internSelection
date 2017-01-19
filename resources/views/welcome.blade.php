@@ -79,51 +79,7 @@
                
                     <div class="nav-wrap">                                
                         <nav id="mainnav" class="mainnav">
-                            <div class="menu-extra">
-                                <ul>
-                                    <li id ="s" class="search-box">
-                                        <a href="#search" class="flat-search"><i class="fa fa-search"></i></a>
-                                        <div class="submenu top-search">
-                                            <div class="widget widget_search">
-                                                <form class="search-form">
-                                                    <input type="search" class="search-field" placeholder="Search …">
-                                                    <input type="submit" class="search-submit">
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="shopping-cart">
-                                        <a href="#">
-                                            <i class="fa fa-shopping-cart"></i>
-                                            <span class="shopping-cart-items-count">2</span>
-                                        </a>
-                                        <div class="subcart">
-                                            <div class="widget_shopping_cart_content">
-                                                <ul class="cart_list product_list_widget">      
-                                                    <li class="mini_cart_item">
-                                                        <a href="#" class="remove" >x</a>
-                                                        <a href="#"><img src="images/products/1.jpg" alt="images">Boskke Cube</a>
-                                                        <p><span class="quantity">1 × <span class="amount">$39.00</span></span></p>
-                                                    </li> 
-                                                    <li class="mini_cart_item">
-                                                        <a href="#" class="remove" >x</a>
-                                                        <a href="#"><img src="images/products/2.jpg" alt="images">Cast Iron Casserole</a>
-                                                        <p><span class="quantity">1 × <span class="amount">$230.00</span></span></p>
-                                                    </li>    
-                                                </ul>
-                                                <p class="total">
-                                                    <strong>Subtotal:</strong> <span class="amount">$269.00</span>
-                                                </p>
-                                                <div class="group-btn">
-                                                    <a class="button" href="#">view cart</a>                                                
-                                                    <a class="button bg-scheme3 style1" href="#">checkout</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                                
-                            </div><!-- /.menu-extra -->
+                            
                             <ul class="menu"> 
                                 <li class="home">
                                     <a href="index.html">Home</a>
