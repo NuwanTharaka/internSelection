@@ -69,7 +69,13 @@ public function RegisterCoordinator(Request $request)
 	$user->save();
 	
 }
-
+	
+public function RegisterCompany(Request $request)
+{	
+ 
+return view('companyreg');
+	
+}
 	
 }
 

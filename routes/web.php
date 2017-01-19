@@ -26,4 +26,8 @@ Route::post('/RegisterCoordinator', [
 		'as' => 'RegisterCoordinator'
 		]);		
 		
+Route::get('/RegisterCompany', [
+    	'uses' => 'UserController@RegisterCompany',
+		'as' => 'RegisterCompany'
+		]);	
 		

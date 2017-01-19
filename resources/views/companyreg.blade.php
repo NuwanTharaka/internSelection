@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>companyreg</title>
         <!-- CSRF Token -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -197,7 +197,7 @@
                                         <li><a href="one-page.html">Home – One Page</a></li>
                                     </ul><!-- /.submenu -->
                                 </li>
-                    							<li><a href="about.html">Company</a>
+                                <li><a href="about.html">Company</a>
                                     <ul class="submenu">
                                         <li><a href="about.html">About Us</a></li>
                                         <li><a href="company-history.html">Company History</a></li>
@@ -208,8 +208,15 @@
                                         <li><a href="testimonials.html">Testimonials</a></li>
                                     </ul><!-- /.submenu -->
                                 </li>
-   <li><a href="'{{route('RegisterCompany')}}'">Company Register</a>
-                                    
+                                <li><a href="services.html">Services</a>
+                                    <ul class="submenu"> 
+                                        <li><a href="services-detail.html">Packaged goods transport</a></li>
+                                        <li><a href="services-detail-v2.html">Multimodal transport</a></li>
+                                        <li><a href="services-detail-v3.html">Sea and air freight</a></li>
+                                        <li><a href="services-detail-v4.html">Logistics solutions</a></li>
+                                        <li><a href="services-detail-v5.html">Warehousing and storage</a></li>
+                                        <li><a href="services-detail-v6.html">Forwarding services</a></li>
+                                    </ul><!-- /.submenu -->
                                 </li>
                                 <li><a href="portfolio.html">Gallery</a>
                                     <ul class="submenu">
@@ -466,7 +473,7 @@
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery-countTo.js')}}"></script> 
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery.cookie.js')}}"></script>
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/parallax.js')}}"></script>
-    <script type="text/javascript" src="{{URL::secureAsset('intern/	javascript/main.js')}}"></script>
+    <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/main.js')}}"></script>
 
 </body>
 </html>
