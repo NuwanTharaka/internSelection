@@ -83,36 +83,10 @@
                             <ul class="menu"> 
                                 <li class="home">
                                     <a href="index.html">Home</a>
-                                    <ul class="submenu"> 
-                                        <li><a href="index.html">Home – Header Modern</a></li>
-                                        <li><a href="home-header-classic.html">Home – Header Classic</a></li>                                        
-                                        <li><a href="home-header-transparent.html">Home – Header Transparent</a></li>
-                                        <li><a href="home-header-widget.html">Home – Header Widgetized</a></li>
-                                        <li><a href="mega-menu.html">Home – Mega Menu</a></li>
-                                        <li><a href="one-page.html">Home – One Page</a></li>
-                                    </ul><!-- /.submenu -->
                                 </li>
-                    							<li><a href="about.html">Company</a>
-                                    <ul class="submenu">
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="company-history.html">Company History</a></li>
-                                        <li><a href="our-people.html">Our People</a></li>
-                                        <li><a href="partners.html">Partners</a></li>
-                                        <li><a href="careers.html">Careers</a></li>
-                                        <li><a href="faq.html">FAQ</a></li>
-                                        <li><a href="testimonials.html">Testimonials</a></li>
-                                    </ul><!-- /.submenu -->
-                                </li>
-   <li><a href="{{route('RegisterCompany')}}">Company Register</a>
+   								<li><a href="{{route('RegisterCompany')}}">Company Register</a>
                                     
-                                </li>
-                                <li><a href="portfolio.html">Gallery</a>
-                                    <ul class="submenu">
-                                        <li><a href="portfolio-v1.html">Layout 01</a></li>
-                                        <li><a href="portfolio-grid.html">Layout 02</a></li>
-                                        <li><a href="portfolio-masonry.html">Layout 03</a></li>
-                                    </ul><!-- /.submenu -->
-                                </li>                                              
+								</li>                                            
                             </ul><!-- /.menu -->                                        
                         </nav><!-- /.mainnav -->  
                     </div><!-- /.nav-wrap -->
