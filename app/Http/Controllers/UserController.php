@@ -106,6 +106,14 @@ return view('companyreg');
         }
     }
 	
+	public function RegisterCompany(Request $request)
+{	
+ 
+return view('StudentDashboard');
+	
+}
+	
+	
 }
 
 ?>
