@@ -208,7 +208,7 @@
                                         <li><a href="testimonials.html">Testimonials</a></li>
                                     </ul><!-- /.submenu -->
                                 </li>
-   <li><a href="'{{route('RegisterCompany')}}'">Company Register</a>
+   <li><a href="{{route('RegisterCompany')}}">Company Register</a>
                                     
                                 </li>
                                 <li><a href="portfolio.html">Gallery</a>
