@@ -50,9 +50,9 @@
                     <div class="row">
                         <div class="flat-wrapper">
                             <div class="custom-info">
-                                 <form class="login-form">                       
-									<span><i class="fa fa-user"></i><input type="text" class="user-name" placeholder="Username"></span> 
-									<span><i class="fa fa-key"></i><input type="password" class="password" placeholder="Password"></span> 
+                                 <form action='{{route('SignIn')}}' method="post" class="login-form">                       
+									<span><i class="fa fa-user"></i><input type="text"  name = "index_no"  class="user-name" placeholder="Username"></span> 
+									<span><i class="fa fa-key"></i><input type="password" name = "password"  class="password" placeholder="Password"></span> 
 									<span> <input type="submit" class="login-submit" value="Login"></span>
                                  </form>
                             </div>
