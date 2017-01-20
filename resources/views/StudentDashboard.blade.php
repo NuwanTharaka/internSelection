@@ -110,12 +110,12 @@
                     <div class="content-wrap col-sm-8">
                         <h3 class="flat-title-section style style1"><span>Available companies</span></h3>
 
-                        <div class="flat-divider d20px"></div>
+                        <div class="flat-divider d20px"></div><p>
 
-                        <p>We are your full support partner and very happy to take care of all your logistic needs. We can do more than simply take your cargo from origin to destination. We can pick it up, sort it, package it and take care of all additional processes. We can also manage all your transportation needs.</p>
+						Getting work experience while you study will help you to gain the skills employers are looking for. Internships and placements are two types of work experience but lots of other options are available. It is also possible to find your own by contacting employers speculatively.</p><p>
 
-                        <p>You can also decide to outsource your fleet with or without your employees. By doing this you will achieve a higher efficiency and a better focus on your core business. You will have the assurance your logistic processes are in the best of hands.</p>
-
+Many employers use internships and placements as a fast track onto their graduate programmes.
+						</p>
                          <div class="clients-image clearfix">
                             <div class="item-three-column">
                                 <div class="item-img">
