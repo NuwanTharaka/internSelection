@@ -36,7 +36,7 @@ Route::post('/loginDetails',[
 ]);
 
 Route::post('/logout',[
-    'uses' => 'UserController@logoutUser',
+    'uses' => 'UserController@logout',
     'as' => 'logout'
 ]);
 
