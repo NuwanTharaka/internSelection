@@ -50,7 +50,31 @@ class UserController extends Controller
         $user->password = bcrypt($request['password']);
         $user->type = 'Student';
         $user->save();
-		$this->loginUser($request);
+		
+		
+		$this->validate($request, [
+            'index_no' => 'required',
+            'password' => 'required'
+        ]);
+
+        $index_no = $request['index_no'];
+        $password = $request['password'];
+
+
+        if (Auth::attempt(['id' => $index_no, 'password' => $password])) {
+            // Authentication passed...
+            if (Auth::user()->type == "Student") {
+                return redirect()->route('StudentDashboard');
+            } elseif (Auth::user()->type == "Coordinator") {
+                return redirect()->route('CompanyDashboard');
+            } else {
+                return redirect()->route('AdminDashboard');
+            }
+
+        } else {
+            return view('welcome', ['customMessage' => 'login failed, try again']);
+        }
+		
 
     }
 
