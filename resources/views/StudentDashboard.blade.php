@@ -53,7 +53,7 @@
 								<div class="custom-info">                     
                                     <form id="logout-form" action="{{ url('/logout') }}" method="POST">
                                           <span><i class="fa fa-user"></i>{{ Auth::user()->id }}<span>&nbsp</span>{{ Auth::user()->type }}</span> 
-                                        {{ csrf_field() }}<input type="submit" value="Log Out">
+                                        {{ csrf_field() }}<input type="submit" value="Log Out" style="margin-left: 5px">
                                     </form>
 								</div>
 
