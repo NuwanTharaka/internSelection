@@ -49,4 +49,19 @@ Route::get('/CompanyDashboard', [
     	'uses' => 'UserController@coordinatorDashboard',
 		'as' => 'CompanyDashboard',
 		'middleware' => 'auth'
-		]);	
+		]);
+
+//by salaka
+Route::post('/Data', [
+    'uses' => 'UserController@Data',
+    'as' => 'Data'
+]);
+Route::get('/studentCompany/{id}','UserController@company'
+);
+Route::post('/checked', [
+    'uses' => 'UserController@Save',
+    'as' => 'checked'
+]);
+Route::get('/tempAdminDashboard',function () {
+    return view('tempAdminRedirect');
+});

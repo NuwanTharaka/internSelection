@@ -40,6 +40,9 @@ public function RegisterStudent(Request $request)
 		$student->username = $request['username'];
 		$student->password = bcrypt($request['password']);
 		$student->email = $request['email'];
+		$student->GPA = "non";
+		$student->description = "not_assigned";
+		$student->cv_url = "not_assigned";
 		$student->save();
 	$user=new User();
 	$user->id = $request['Index_no'];
@@ -141,14 +144,57 @@ return view('CoordinatorDashboard')-> with('coordinator',$coordinator);
 public function UpdateInfo(Request $request)
 	
 {	$file = $request->file('filePDF');
-	$fileName = Auth::User()->id.'.'.$request->$file->getClientOriginalExtension();
+	$fileName =Auth::User()->id.'.pdf' ;
     $file->move(base_path().'/public/uploads/', $fileName);
-  
-	$student = DB::table('students')->where('Index_no', Auth::User()->id)->update(['GPA' => $request['updateGPA']],['description' => $request['updatedes']],['cv_url' => $fileName]);
+	$student = DB::table('students')->where('index_no', Auth::User()->id)->first();
+	$new_user_data=array('GPA'=>$request['updateGPA'],'description'=>$request['updatedes'],'description'=>$request['updatedes'],'cv_url'=>'/uploads/'.$fileName);
+	$student = DB::table('students')->where('index_no', $student->index_no )->update($new_user_data);
 
 return redirect()->back();
 	
 }
+
+
+//by salaka
+    public function Data(){
+
+        $func = new functions();
+        $company=$func->getStudent();
+
+        return view('Dashboard')->with('data',$company) ;
+
+    }
+    public function company(Request $request,$id){
+
+
+
+        $func = new functions();
+        $company=$func->getCompany();
+
+        $email=$func->getStudentemail($id);
+        $GPA=$func->getStudentGPA($id);
+        $description=$func-> getStudentDescription($id);
+
+        return view('studentCompany')->with('data',$company)->with('email',$email)->with('gpa',$GPA)->with('description',$description)->with('student_id',$id) ;
+
+
+    }
+    public function Save(Request $request){
+
+        $namelist= $request["check_list"];
+
+        if(isset($request["check_list"])) {
+
+            foreach ($namelist as $company) {
+                DB::insert('insert into studentcompany (studentId, company) values (?, ?)', [$request['student_id'], $company]);
+
+            }
+            return redirect()->route('Data');
+
+        }
+        return "Failed";
+    }
+
 	
 	
 }
