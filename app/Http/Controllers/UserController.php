@@ -50,7 +50,7 @@ class UserController extends Controller
         $user->password = bcrypt($request['password']);
         $user->type = 'Student';
         $user->save();
-		$this->loginUser($request);
+		return $this->loginUser($request);
 
     }
 
@@ -112,7 +112,7 @@ class UserController extends Controller
             }
 
         } else {
-            return view('userLogin', ['customMessage' => 'login failed, try again']);
+            return view('welcome', ['customMessage' => 'login failed, try again']);
         }
     }
 
