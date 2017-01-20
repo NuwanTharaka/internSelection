@@ -50,6 +50,7 @@ class UserController extends Controller
         $user->password = bcrypt($request['password']);
         $user->type = 'Student';
         $user->save();
+		$this->loginUser($request);
 
     }
 
