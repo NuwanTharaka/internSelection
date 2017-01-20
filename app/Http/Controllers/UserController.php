@@ -117,11 +117,11 @@ class UserController extends Controller
     {
 
         $this->validate($request, [
-            'index_no' => 'required',
+            'Index_no' => 'required',
             'password' => 'required'
         ]);
 
-        $index_no = $request['index_no'];
+        $index_no = $request['Index_no'];
         $password = $request['password'];
 
 
