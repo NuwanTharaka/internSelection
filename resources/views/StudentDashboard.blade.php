@@ -5,7 +5,7 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-           <title>Laravel</title>
+           <title>Intern Selection Poratal</title>
         <!-- CSRF Token -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
