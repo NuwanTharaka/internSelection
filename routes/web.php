@@ -35,6 +35,11 @@ Route::post('/loginDetails',[
     'as' => 'SignIn'
 ]);
 
+Route::post('/logout',[
+    'uses' => 'UserController@logoutUser',
+    'as' => 'logout'
+]);
+
 Route::post('/UpdateInfo',[
     'uses' => 'UserController@UpdateInfo',
     'as' => 'UpdateInfo'
