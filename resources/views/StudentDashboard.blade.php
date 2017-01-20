@@ -52,7 +52,7 @@
 							<div class="flat-wrapper">
 								<div class="custom-info">
 									 <form class="login-form">                       
-										<span><i class="fa fa-user"></i>{{ Auth::user()->id }}</span> 
+										 <span><i class="fa fa-user"></i>{{ Auth::user()->id }}<span>&nbsp</span>{{ Auth::user()->type }}</span> 
 										<span> <input type="submit" class="login-submit" value="Log Out"></span>
 									 </form>
 								</div>
