@@ -52,7 +52,7 @@ Route::get('/CompanyDashboard', [
 		]);
 
 //by salaka
-Route::get('/Data', [
+Route::post('/Data', [
     'uses' => 'UserController@Data',
     'as' => 'Data'
 ]);
