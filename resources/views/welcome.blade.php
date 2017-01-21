@@ -143,6 +143,9 @@
                 </div><!-- /.row -->  
             </div><!-- /.container -->                      
         </div><!-- /.page-title -->
+        
+        
+		<div class="alert alert-warning" role="alert"><strong>THIS SITE IS ONLY FOR DEMONSTRATION PURPOSES</strong>Use the following credentials for log-in</div>
 
 
 
