@@ -147,7 +147,7 @@
         <div class="container">
                 <div class="row">
                     <div class="content-wrap">
-						<div class="alert alert-warning" role="alert"><strong>THIS SITE IS ONLY FOR DEMONSTRATION PURPOSES</strong>Use the following credentials to log-in</div>
+						<div class="alert alert-warning" role="alert"><strong>THIS SITE IS ONLY FOR DEMONSTRATION PURPOSES ..!</strong>  Use the following credentials to log-in</div>
 						<div class="bs-callout bs-callout-info" id="callout-alerts-dismiss-plugin"> <h4>Requires JavaScript alert plugin</h4> <p>For fully functioning, dismissible alerts, you must use the <a href="../javascript/#alerts">alerts JavaScript plugin</a>.</p>
 						</div>
 					</div>
