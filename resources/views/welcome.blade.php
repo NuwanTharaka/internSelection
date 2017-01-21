@@ -154,21 +154,26 @@
                             <div class="main-content-wrap"> 
                                 <div class="comments-area">
                                     <div class="comment-respond">
-                                        <h4 class="comment-reply-title">Personel Details</h4>
- <form action='{{route('RegisterStudent')}}' method="post">
+                                        <h4 class="comment-reply-title">Register Student</h4>
+ <form action='{{route('RegisterStudent')}}' method="post" id="regForm">
 <fieldset >
-<legend>Register</legend>
 <label for='Index_no' >Index_no*: </label>
-<input type='text' name='Index_no' id='Index_no' maxlength="50" />
+<input type='text' name='Index_no' id='Index_no' maxlength="50" required />
 <label for='email' >Email Address*:</label>
-<input type='text' name='email' id='email' maxlength="50" />
+<input type='text' name='email' id='email' maxlength="50" required required/>
 
 <label for='username' >UserName*:</label>
-<input type='text' name='username' id='username' maxlength="50" />
-<input type="hidden" name="_token" value = "{{ csrf_token() }}">
-<label for='password' >Password*:</label>
-<input type='password' name='password' id='password' maxlength="50" />
-<input type='submit' name='Submit' value='Submit' />
+<input type='text' name='username' id='username' maxlength="50" required/>
+<input type="hidden" name="_token" value = "{{ csrf_token() }}" >
+<label for='password' style="margin-top:5px;">Password*:</label>
+<br>
+<input type='password' name='password' id='password' maxlength="50" style=" width: 1500px;" required/>
+<br>
+<label for='password2' style="margin-top:5px;">Password Retype*:</label>
+<br>
+<input type='password' name='password2' id='password2' maxlength="50"  style="width:1500px;"required/>
+<br>
+<input type='submit' name='Submit' value='Submit' style="margin-top:20px;" id="submit" />
 
 </fieldset>
 </form><!-- /.comment-form -->
@@ -272,6 +277,22 @@
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery.themepunch.revolution.min.js')}}"></script>
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/slider.js')}}"></script>
 
+<script>
+jQuery('#regForm').validate({
+            rules : {
+                password : {
+                    minlength : 5
+                },
+                password2 : {
+                    minlength : 5,
+                    equalTo : "#password"
+                }
+            }
+});
 
+$('#submit').click(function(){
+    console.log($('#regForm').valid());
+});
+</script>
 </body>
 </html>

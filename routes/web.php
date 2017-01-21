@@ -67,6 +67,26 @@ Route::post('/checked', [
     'uses' => 'UserController@Save',
     'as' => 'checked'
 ]);
-Route::get('/tempAdminDashboard',function () {
-    return view('tempAdminRedirect');
-});
+
+
+Route::get('/Data', [
+    'uses' => 'UserController@Data',
+    'as' => 'Data'
+]);
+Route::get('/studentCompany/{id}',[
+'uses' =>'UserController@company',
+ 'as' => 'studentCompany'
+]);
+Route::post('/checked', [
+    'uses' => 'UserController@Save',
+    'as' => 'checked'
+]);
+
+
+//by salaka ; coordinator perspective
+Route::get('/getAssignedStudents', [
+    'uses' => 'UserController@viewAssignedStudents',
+    'as' => 'getAssignedStudents'
+]);
+
+

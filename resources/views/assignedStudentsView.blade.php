@@ -1,3 +1,8 @@
+
+<?php
+
+
+?>
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
@@ -38,7 +43,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-</head>                                    
+</head>                               
 <body class="header-sticky page-loading header-v2">   
     <div class="loading-overlay">
     </div>
@@ -69,7 +74,7 @@
                 <div class="header-wrap">
                     <div id="logo" class="logo">
                         <a href="index.html">
-                            <img src="images/logo.png" alt="images">
+                            <img src="{URL::secureAsset('intern/images/logo.png')}}" alt="images">
                         </a>
                     </div><!-- /.logo -->
                     <div class="btn-menu">
@@ -78,10 +83,11 @@
                
                     <div class="nav-wrap">                                
                         <nav id="mainnav" class="mainnav">
+                            
                             <ul class="menu"> 
                                 <li class="home">
                                     <a href="index.html">Home</a>
-                                </li>
+                                </li>                                           
                             </ul><!-- /.menu -->                                        
                         </nav><!-- /.mainnav -->  
                     </div><!-- /.nav-wrap -->
@@ -96,99 +102,32 @@
                 <div class="row">
                     <div class="col-md-12">                    
                         <div class="page-title-heading">
-                            <h2>Company List</h2>
+                            <h2>{{$coordinator->company_name}}</h2>
                         </div><!-- /.page-title-heading -->                        
                     </div><!-- /.col-md-12 -->  
                 </div><!-- /.row -->  
             </div><!-- /.container -->                      
         </div><!-- /.page-title -->
 
-        <div class="flat-row flat-general sidebar-right">
-            <div class="container">
-                <div class="row">
-                    <div class="general">
-                        <h3 class="flat-title-section style style1"><span>Available companies</span></h3>
+      
+            <div class="container" style="size:10000%">
+            <br>
+            <br>
+            <div id="parentHolder">
+			</div>
+            <br>
+            <br>
+             </div><!-- /.container -->                    
 
-                        <div class="flat-divider d20px"></div>
-
-                        <p>We are your full support partner and very happy to take care of all your logistic needs. We can do more than simply take your cargo from origin to destination. We can pick it up, sort it, package it and take care of all additional processes. We can also manage all your transportation needs.</p>
-
-                        <p>You can also decide to outsource your fleet with or without your employees. By doing this you will achieve a higher efficiency and a better focus on your core business. You will have the assurance your logistic processes are in the best of hands.</p>
-                        
-                        <form class="comment-form">		
-                        	<div class="clients-image clearfix">
-                            <div class="item-three-column">
-                                <div class="item-img">
-                                    <img src="images/client/1.png" alt="images">
-                                </div>
-                                <p class="tooltip">Logistics</p>
-								<div class="material-switch pull-right">
-										<input id="someSwitchOption005" name="someSwitchOption001" type="checkbox"/>
-										<label for="someSwitchOption005" class="label-default"></label>
-								</div>
-                            </div>
-                            <div class="item-three-column">
-                                <div class="item-img">
-                                    <img src="images/client/2.png" alt="images">
-                                </div>
-                                <p class="tooltip">Royal Resort</p>
-                                <div class="material-switch pull-right">
-										<input id="someSwitchOption004" name="someSwitchOption001" type="checkbox"/>
-										<label for="someSwitchOption004" class="label-default"></label>
-								</div>
-                            </div>
-                            <div class="item-three-column">
-                                <div class="item-img">
-                                    <img src="images/client/3.png" alt="images">
-                                </div>
-                                <p class="tooltip">Hexagon</p>
-                                <div class="material-switch pull-right">
-										<input id="someSwitchOption003" name="someSwitchOption002" type="checkbox"/>
-										<label for="someSwitchOption003" class="label-default"></label>
-								</div>
-                            </div>
-                            <div class="item-three-column">
-                                <div class="item-img">
-                                    <img src="images/client/4.png" alt="images">
-                                </div>
-                                <p class="tooltip">Plusinfinit</p>
-                                <div class="material-switch pull-right">
-										<input id="someSwitchOption002" name="someSwitchOption003" type="checkbox"/>
-										<label for="someSwitchOption002" class="label-default"></label>
-								</div>
-                            </div>
-                            <div class="item-three-column">
-                                <div class="item-img">
-                                    <img src="images/client/5.png" alt="images">
-                                </div>
-                                <p class="tooltip">Overseas Transport</p>
-                                <div class="material-switch pull-right">
-										<input id="someSwitchOption001" name="someSwitchOption004" type="checkbox"/>
-										<label for="someSwitchOption001" class="label-default"></label>
-								</div>
-                            </div>
-                            <div class="item-three-column">
-                                <div class="item-img">
-                                    <img src="images/client/6.png" alt="images">
-                                </div>
-                                <p class="tooltip">Contruction Solutions</p>
-                                <div class="material-switch pull-right">
-										<input id="someSwitchOptionDefault" name="someSwitchOption005" type="checkbox"/>
-										<label for="someSwitchOptionDefault" class="label-default"></label>
-								</div>
-                            </div>
-                        </div><!-- /.flat-clients-image -->
-                        	<p class="form-submit">
-                            <input name="submit" type="submit" id="submit" class="submit" value="Save Company List">
-                            </p>
-						</form>
-                    </div><!-- /.general -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div><!-- /.blog -->
-       
+<?php 
+$id=[];
+$username=[];
+foreach($assignedStudentSet as $currentstudent): 
+ array_push($id,$currentstudent->index_no);
+ array_push($username,$currentstudent->username );
+endforeach; ?>
         <!-- Footer -->
-          <footer class="footer">
+      <footer class="footer">
            <div class="content-bottom-widgets">        
                 <div class="container">
                     <div class="row"> 
@@ -258,6 +197,10 @@
     </div>
    
     <!-- Javascript -->
+    
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+
    <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery.min.js')}}"></script>
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/bootstrap.min.js')}}"></script>
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery.easing.js')}}"></script> 
@@ -266,6 +209,54 @@
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery.cookie.js')}}"></script>
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/parallax.js')}}"></script>
     <script type="text/javascript" src="{{URL::secureAsset('intern/	javascript/main.js')}}"></script>
+    <script>
+var id=[];
+var username =[];
+var bookDetails=[];
+var id = <?php echo json_encode($id); ?>;
+var username = <?php echo json_encode($username); ?>;
+bookDetails.push([ "&nbsp;&nbsp;"+"CV Form"+"&nbsp;&nbsp;","&nbsp;&nbsp;"+"Student Name"+"&nbsp;&nbsp;","&nbsp;&nbsp;"+"Student ID"+"&nbsp;&nbsp;"]);
 
+for (i=0; i<id.length; i++)
+{	var tempurl = "{{URL::secureAsset('uploads/replace.pdf')}}";
+	var data = id[i].slice(0, -1);
+	var temp1 = tempurl.replace("replace", data);
+	bookDetails.push([ "&nbsp;&nbsp;"+id[i]+"&nbsp;&nbsp;","&nbsp;&nbsp;"+username[i]+"&nbsp;&nbsp;","&nbsp;&nbsp;"+"<a href="+temp1+" download><button>Download CV</button></a> "+"&nbsp;&nbsp;"]);
+}
+ var parentDiv = $("#parentHolder");
+    parentDiv.html("");
+    var aTable = $("<table>", {
+        "id": "newTable"
+    }).appendTo(parentDiv);
+    var rowCount = bookDetails.length;
+    var colmCount = bookDetails[0].length;
+
+    // For loop for adding header .i.e th to our table
+    for (var k = 0; k < 1; k++) {
+        var fragTrow = $("<tr style='border: 1px solid black;'>", {
+            "class": "trClass"
+        }).appendTo(aTable);
+        for (var j = 0; j < colmCount; j++) {
+            $("<th style='border: 2px solid black; font-weight: 900;  font-size: 200%;'>", {
+                "class": "thClass"
+            }).prependTo(fragTrow).html(bookDetails[k][j]);
+        }
+    }
+
+    //For loop for adding data .i.e td with data to our dynamic generated table
+    for (var i = 1; i < rowCount; i < i++) {
+        var fragTrow = $("<tr style='border: 1px solid black; font-weight: 500;  font-size: 150%;'>", {
+            "class": "trClass"
+        }).appendTo(aTable);
+        for (var j = 0; j < colmCount; j++) {
+            $("<td style='border: 1px solid black;'>", {
+                "class": "tdClass"
+            }).appendTo(fragTrow).html(bookDetails[i][j]);
+        }
+    }
+//*                    
+     </script>  
 </body>
 </html>
+
+

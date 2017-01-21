@@ -119,21 +119,21 @@ Many employers use internships and placements as a fast track onto their graduat
                          <div class="clients-image clearfix">
                             <div class="item-three-column">
                                 <div class="item-img">
-                                    <img src="{{URL::secureAsset('intern/images/client/2.png')}}" id="img1" alt="images">
+                                    <img src="{{URL::secureAsset('intern/images/client/noCMP.png')}}" id="img1" alt="images">
                                 </div>
-                                <p class="tooltip" id="imgc1">Logistics</p>
+                                <p class="tooltip" id="imgc1">No company assinged</p>
                             </div>
                             <div class="item-three-column">
                                 <div class="item-img">
-                                    <img src="{{URL::secureAsset('intern/images/client/2.png')}}" id="img2" alt="images">
+                                    <img src="{{URL::secureAsset('intern/images/client/noCMP.png')}}" id="img2" alt="images">
                                 </div>
-                                <p class="tooltip" id="imgc2">Royal Resort</p>
+                                <p class="tooltip" id="imgc2">No company assinged</p>
                             </div>
                             <div class="item-three-column">
                                 <div class="item-img">
-                                    <img src="{{URL::secureAsset('intern/images/services/1.jpg')}}" id="img3"  alt="images">
+                                    <img src="{{URL::secureAsset('intern/images/services/noCMP.jpg')}}" id="img3"  alt="images">
                                 </div>
-                                <p class="tooltip" id="imgc3">Hexagon</p>
+                                <p class="tooltip" id="imgc3">No company assinged</p>
                             </div>
                         
                         </div><!-- /.flat-clients-image -->
@@ -256,19 +256,28 @@ Many employers use internships and placements as a fast track onto their graduat
     <script>
    $(document ).ready(function() {
 	   var tempArray = <?php echo json_encode($companyurl); ?>;
-	   var tempurl = "{{URL::secureAsset('images/replace')}}";
-	   var temp1 = tempurl.replace("replace", tempArray[0]);
-	   var temp2 = tempurl.replace("replace", tempArray[1]);
-		
-     $('#img1').attr('src',temp1);   
-
-	  $('#img2').attr('src',temp2);   
-
-	  $('#img3').attr('src',"");   
 	   var tempArray1 = <?php echo json_encode($companyname); ?>;
-	   document.getElementById('imgc1').innerHTML = tempArray1[0];
-	   document.getElementById('imgc2').innerHTML = tempArray1[1];
-	   document.getElementById('imgc3').innerHTML = tempArray1[2];
+	   var tempurl = "{{URL::secureAsset('images/replace')}}";
+	   if (tempArray[0]!=null){
+	   var temp1 = tempurl.replace("replace", tempArray[0]);
+	    $('#img1').attr('src',temp1);   
+		document.getElementById('imgc1').innerHTML = tempArray1[0];
+	   }
+	  if (tempArray[1]!=null){
+	   var temp2 = tempurl.replace("replace", tempArray[1]);
+	     $('#img2').attr('src',temp2); 
+		document.getElementById('imgc2').innerHTML = tempArray1[1];
+	  }
+	  if (tempArray[2]!=null){
+	   var temp3 = tempurl.replace("replace", tempArray[2]);
+    	 $('#img3').attr('src',temp3);
+		document.getElementById('imgc3').innerHTML = tempArray1[2];
+	  }
+	    
+	   
+	
+	
+	   
 	  
 	});
 	</script>

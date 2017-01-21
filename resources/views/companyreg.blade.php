@@ -216,25 +216,33 @@
                             <div class="main-content-wrap"> 
                                 <div class="comments-area">
                                     <div class="comment-respond">
-                                        <h4 class="comment-reply-title">Personel Details</h4>
+                                        <h4 class="comment-reply-title">Company Registration</h4>
 
-      <form action='{{route('RegisterCoordinator')}}' method="post">
+<form action='{{route('RegisterCoordinator')}}' method="post" id="regForm">
 <fieldset >
-<legend>Register Coordinator</legend>
-<label for='Index_no' >Index_no*: </label>
-<input type='text' name='Index_no' id='Index_no' maxlength="50" />
+<label for='Index_no' >NIC NO*: </label>
+<input type='text' name='Index_no' id='Index_no' maxlength="50" required />
 <label for='email' >Email Address*:</label>
-<input type='text' name='email' id='email' maxlength="50" />
+<input type='text' name='email' id='email' maxlength="50"required/>
 <label for='Company_Name' >Company_Name*:</label>
-<input type='text' name='Company_Name' id='Company_Name' maxlength="50" />
-<input type="file" name="image" />
+<input type='text' name='Company_Name' id='Company_Name' maxlength="50" required/>
 <label for='username' >UserName*:</label>
-<input type='text' name='username' id='username' maxlength="50" />
-<input type="hidden" name="_token" value = "{{ csrf_token() }}">
-<label for='password' >Password*:</label>
-<input type='password' name='password' id='password' maxlength="50" />
-<input type='submit' name='Submit' value='Submit' />
+<input type='text' name='username' id='username' maxlength="50" required/>
+<input type="hidden" name="_token" value = "{{ csrf_token() }}" >
+<br>
+<label for='username' >Company profile Pic*:</label>
+<input type="file" name="image" required/>
+<label for='password' style="margin-top:5px;">Password*:</label>
+<br>
+<input type='password' name='password' id='password' maxlength="50" style=" width: 1500px;" required/>
+<br>
+<label for='password2' style="margin-top:5px;">Password Retype*:</label>
+<br>
+<input type='password' name='password2' id='password2' maxlength="50"  style="width:1500px;"required/>
+<br>
+<input type='submit' name='Submit' value='Submit' style="margin-top:20px;" id="submit" />
 
+</fieldset>
 </fieldset>	
 </form><!-- /.comment-form -->
                                     </div><!-- /.comment-respond -->
@@ -418,6 +426,22 @@
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/jquery.cookie.js')}}"></script>
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/parallax.js')}}"></script>
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/main.js')}}"></script>
+<script>
+jQuery('#regForm').validate({
+            rules : {
+                password : {
+                    minlength : 5
+                },
+                password2 : {
+                    minlength : 5,
+                    equalTo : "#password"
+                }
+            }
+});
 
+$('#submit').click(function(){
+    console.log($('#regForm').valid());
+});
+</script>
 </body>
 </html>

@@ -68,7 +68,7 @@ class UserController extends Controller
             } elseif (Auth::user()->type == "Coordinator") {
                 return redirect()->route('CompanyDashboard');
             } else {
-                return redirect()->route('AdminDashboard');
+                return redirect()->route('Data');
             }
 
         } else {
@@ -86,6 +86,8 @@ class UserController extends Controller
             'password' => 'required|min:3',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
+		
+		
 
         $imageName = $request['Company_Name'] . '.' . $request->image->getClientOriginalExtension();
         $request->image->move(public_path('images'), $imageName);
@@ -102,6 +104,26 @@ class UserController extends Controller
         $user->password = bcrypt($request['password']);
         $user->type = 'Coordinator';
         $user->save();
+		
+		
+		
+		$index_no = $request['Index_no'];
+        $password = $request['password'];
+
+		
+		if (Auth::attempt(['id' => $index_no, 'password' => $password])) {
+            // Authentication passed...
+            if (Auth::user()->type == "Student") {
+                return redirect()->route('StudentDashboard');
+            } elseif (Auth::user()->type == "Coordinator") {
+                return redirect()->route('CompanyDashboard');
+            } else {
+                return redirect()->route('Data');
+            }
+
+        } else {
+            return view('welcome', ['customMessage' => 'login failed, try again']);
+        }
 
     }
 
@@ -132,7 +154,7 @@ class UserController extends Controller
             } elseif (Auth::user()->type == "Coordinator") {
                 return redirect()->route('CompanyDashboard');
             } else {
-                return redirect()->route('AdminDashboard');
+                return redirect()->route('Data');
             }
 
         } else {
@@ -161,11 +183,15 @@ class UserController extends Controller
 
     public function coordinatorDashboard(Request $request)
     {
-        $student = DB::table('coordinator')->where('ID', Auth::User()->id)->first();
+        $coordinator = DB::table('coordinator')->where('ID', Auth::User()->id)->first();
+		$company =  $coordinator ->company_name;
 
-        return view('CoordinatorDashboard')->with('coordinator', $coordinator);
+        $result = DB::select('select DISTINCT students.index_no,students.username,students.cv_url from students,studentcompany where students.index_no = studentcompany.studentID and studentcompany.studentID in (select studentID from studentcompany where company =?)',[$company]);
 
+        return view('assignedStudentsView')->with('assignedStudentSet',$result)->with('coordinator', $coordinator);
     }
+
+
 
     public function UpdateInfo(Request $request)
 
