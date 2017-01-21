@@ -46,22 +46,22 @@
     </div>
     
     <div class="boxed">
-        <div class="site-header header-v3">
-        <div class="flat-top">
+     <div class="site-header header-v3">
+      <div class="flat-top">
                 <div class="container">
                     <div class="row">
                         <div class="flat-wrapper">
                             <div class="custom-info">
-  								<form action='{{route('SignIn')}}' method="post">                   
-									<span><i class="fa fa-user"></i> <input id="user"  name = "index_no" type="text" class="user-name" required="" autocomplete="off"></span> 
-									<span><i class="fa fa-key"></i> <input id="pass" name = "password" type="password" class="password" required="" autocomplete="off"></span> 
-									 <input type="hidden" name="_token" value = "{{Session::token()}}">
+                                 <form action='{{route('SignIn')}}' method="post" class="login-form">                       
+									<span><i class="fa fa-user"></i><input type="text"  name = "Index_no"  class="user-name" placeholder="Username"></span> 
+									<span><i class="fa fa-key"></i><input type="password" name = "password"  class="password" placeholder="Password"></span> 
+									<input type="hidden" name="_token" value = "{{ csrf_token() }}">
 									<span> <input type="submit" class="login-submit" value="Login"></span>
                                  </form>
                             </div>
 
                             <div class="welcome-text">
-								<span>Welcome to the Internship Login Portal </span>
+								<span>Welcome to the Internship Selection Portal </span>
                             </div>
                         </div><!-- /.flat-wrapper -->
                     </div><!-- /.row -->
@@ -72,7 +72,7 @@
                 <div class="header-wrap">
                     <div id="logo" class="logo">
                         <a href="index.html">
-                            <img src="images/logo.png" alt="images">
+                            <img src="{{URL::secureAsset('intern/images/logo.png')}}" alt="images">
                         </a>
                     </div><!-- /.logo -->
                     <div class="btn-menu">
@@ -81,10 +81,11 @@
                
                     <div class="nav-wrap">                                
                         <nav id="mainnav" class="mainnav">
+                            
                             <ul class="menu"> 
                                 <li class="home">
-                                    <a href="index.html">Home</a> 
-                                </li>
+                                    <a href="index.html">Home</a>
+                                </li>                                       
                             </ul><!-- /.menu -->                                        
                         </nav><!-- /.mainnav -->  
                     </div><!-- /.nav-wrap -->
