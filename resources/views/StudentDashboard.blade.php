@@ -254,7 +254,7 @@ Many employers use internships and placements as a fast track onto their graduat
     <script type="text/javascript" src="{{URL::secureAsset('intern/javascript/parallax.js')}}"></script>
     <script type="text/javascript" src="{{URL::secureAsset('intern/	javascript/main.js')}}"></script>
     <script>
-   $(document ).ready(function() {
+  /* $(document ).ready(function() {
 	   var tempArray = <?php echo json_encode($companyurl); ?>;
 	   var tempArray1 = <?php echo json_encode($companyname); ?>;
 	   var tempurl = "{{URL::secureAsset('images/replace')}}";
@@ -279,7 +279,7 @@ Many employers use internships and placements as a fast track onto their graduat
 	
 	   
 	  
-	});
+	});*/
 	</script>
 
 </body>
