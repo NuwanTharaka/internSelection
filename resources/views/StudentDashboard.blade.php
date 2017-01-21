@@ -131,7 +131,7 @@ Many employers use internships and placements as a fast track onto their graduat
                             </div>
                             <div class="item-three-column">
                                 <div class="item-img">
-                                    <img src="{{URL::secureAsset('intern/images/client/3.png')}}" id="img3"  alt="images">
+                                    <img src="{{URL::secureAsset('intern/images/services/1.jpg')}}" id="img3"  alt="images">
                                 </div>
                                 <p class="tooltip" id="imgc3">Hexagon</p>
                             </div>
