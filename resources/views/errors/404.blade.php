@@ -41,7 +41,7 @@
         <div class="container">
             <div class="content">
                 <div class="title">Page Not Found..!</div>
-				<a href="http://internselection.herokuapp.com/"><Go back to home page/a>
+				<a href="http://internselection.herokuapp.com/">Go back to home page</a>
             </div>
         </div>
     </body>
