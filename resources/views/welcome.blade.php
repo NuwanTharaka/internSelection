@@ -159,7 +159,7 @@
 								Administrator (Instructor)
 							  </li>
 							  <li class="list-group-item">
-								<span class="badge">Username: 901730329v  |   Password: 12345</span>
+								<span class="badge">Username: 99669966  |   Password: asdf8</span>
 								Company Coordinator
 							  </li>
 							</ul>
