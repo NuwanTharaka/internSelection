@@ -600,8 +600,8 @@
 
     var retinaLogos = function() {
       var retina = window.devicePixelRatio > 1 ? true : false;
-        if( retina ) {
-            $( '.header .logo' ).find('img').attr( {src:'https://internselection.herokuapp.com/intern/images/logo@2x.png'} ).css({"width": "60", "height": "60px"}).height(60).width(60);   
+        if( retina || 1 ) {
+            $( '.header .logo' ).find('img').attr( {src:'https://internselection.herokuapp.com/intern/images/logo@2x.png'} ).css({"width": "auto", "height": "60px"}).height(60).width(60);   
         }
     };   
 
