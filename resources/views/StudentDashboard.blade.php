@@ -119,19 +119,19 @@ Many employers use internships and placements as a fast track onto their graduat
                          <div class="clients-image clearfix">
                             <div class="item-three-column">
                                 <div class="item-img">
-                                    <img src="" id="img1" alt="images">
+                                    <img src="{{URL::secureAsset('intern/images/client/2.png')}}" id="img1" alt="images">
                                 </div>
                                 <p class="tooltip" id="imgc1">Logistics</p>
                             </div>
                             <div class="item-three-column">
                                 <div class="item-img">
-                                    <img src="images/client/2.png" id="img2" alt="images">
+                                    <img src="{{URL::secureAsset('intern/images/client/2.png')}}" id="img2" alt="images">
                                 </div>
                                 <p class="tooltip" id="imgc2">Royal Resort</p>
                             </div>
                             <div class="item-three-column">
                                 <div class="item-img">
-                                    <img src="images/client/3.png" id="img3"  alt="images">
+                                    <img src="{{URL::secureAsset('intern/images/client/3.png')}}" id="img3"  alt="images">
                                 </div>
                                 <p class="tooltip" id="imgc3">Hexagon</p>
                             </div>
