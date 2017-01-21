@@ -154,6 +154,14 @@
 								<span class="badge">Username: 140xxxk  |   Password: 12345</span>
 								Student
 							  </li>
+							  <li class="list-group-item">
+								<span class="badge">Username: admin  |   Password: 1234Admin</span>
+								Administrator (Instructor)
+							  </li>
+							  <li class="list-group-item">
+								<span class="badge">Username: 901730329v  |   Password: 12345</span>
+								Company Coordinator
+							  </li>
 							</ul>
 						</div>
 					</div>
