@@ -148,7 +148,14 @@
                 <div class="row">
                     <div class="content-wrap">
 						<div class="alert alert-warning" role="alert"><strong>THIS SITE IS ONLY FOR DEMONSTRATION PURPOSES ..!</strong>  Use the following credentials to log-in</div>
-						<div class="bs-callout bs-callout-info" id="callout-alerts-no-default"> <h4>No default class</h4> <p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.</p> </div>
+						<div class="bs-callout bs-callout-info" id="callout-alerts-no-default"> <h4>Log-In details for different account types</h4> 
+							<ul class="list-group">
+							  <li class="list-group-item">
+								<span class="badge">Username: 140xxxk  |   Password: 12345</span>
+								Student
+							  </li>
+							</ul>
+						</div>
 					</div>
 			</div>
 		</div>
