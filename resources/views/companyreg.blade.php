@@ -100,7 +100,7 @@
                 <div class="row">
                     <div class="col-md-12">                    
                         <div class="page-title-heading">
-                            <h2>Update Account Details</h2>
+                            <h2>Company Registration</h2>
                         </div><!-- /.page-title-heading -->                        
                     </div><!-- /.col-md-12 -->  
                 </div><!-- /.row -->  
