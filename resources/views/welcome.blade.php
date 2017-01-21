@@ -130,7 +130,7 @@
             </div>
         </div>
 
-        <!-- Page title -->
+        <!-- Page title --->
         <div class="page-title parallax-style parallax1">
             <div class="overlay"></div>
             <div class="container">
