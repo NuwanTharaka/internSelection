@@ -119,21 +119,21 @@ Many employers use internships and placements as a fast track onto their graduat
                          <div class="clients-image clearfix">
                             <div class="item-three-column">
                                 <div class="item-img">
-                                    <img src="{{URL::secureAsset('intern/images/client/noCMP.png')}}" id="img1" alt="images">
+                                    <img src="{{URL::secureAsset('intern/images/member/at&t.jpg')}}" id="img1" alt="images">
                                 </div>
-                                <p class="tooltip" id="imgc1">No company assinged</p>
+                                <p class="tooltip" id="imgc1">AT & T</p>
                             </div>
                             <div class="item-three-column">
                                 <div class="item-img">
-                                    <img src="{{URL::secureAsset('intern/images/client/noCMP.png')}}" id="img2" alt="images">
+                                    <img src="{{URL::secureAsset('intern/images/member/mobitel.png')}}" id="img2" alt="images">
                                 </div>
-                                <p class="tooltip" id="imgc2">No company assinged</p>
+                                <p class="tooltip" id="imgc2">Mobitel Sri Lanka</p>
                             </div>
                             <div class="item-three-column">
                                 <div class="item-img">
-                                    <img src="{{URL::secureAsset('intern/images/services/noCMP.jpg')}}" id="img3"  alt="images">
+                                    <img src="{{URL::secureAsset('intern/images/member/dialog.jpg')}}" id="img3"  alt="images">
                                 </div>
-                                <p class="tooltip" id="imgc3">No company assinged</p>
+                                <p class="tooltip" id="imgc3">Dialog Axiata</p>
                             </div>
                         
                         </div><!-- /.flat-clients-image -->
