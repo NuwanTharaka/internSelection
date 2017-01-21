@@ -148,8 +148,7 @@
                 <div class="row">
                     <div class="content-wrap">
 						<div class="alert alert-warning" role="alert"><strong>THIS SITE IS ONLY FOR DEMONSTRATION PURPOSES ..!</strong>  Use the following credentials to log-in</div>
-						<div class="bs-callout bs-callout-info" id="callout-alerts-dismiss-plugin"> <h4>Requires JavaScript alert plugin</h4> <p>For fully functioning, dismissible alerts, you must use the <a href="../javascript/#alerts">alerts JavaScript plugin</a>.</p>
-						</div>
+						<div class="bs-callout bs-callout-info" id="callout-alerts-no-default"> <h4>No default class</h4> <p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.</p> </div>
 					</div>
 			</div>
 		</div>
